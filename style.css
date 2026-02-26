@@ -150,6 +150,14 @@ body {
     color: #777;
 }
 
+.activity-img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    height: 200px;
+    object-fit: cover;
+}
+
 .activity {
     max-width: 500px;
     margin: 15px auto;
@@ -158,14 +166,6 @@ body {
     background: white;
     box-shadow: 0 20px 40px rgba(0,0,0,0.08);
     transition: 0.3s;
-}
-
-.activity-img {
-    width: 100%;
-    border-radius: 20px;
-    margin-bottom: 15px;
-    height: 200px;
-    object-fit: cover;
 }
 
 .activity:hover {
@@ -196,5 +196,6 @@ body {
         width: 90%;
     }
 }
+
 
 
