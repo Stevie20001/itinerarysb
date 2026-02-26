@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* LOGIN */
+.login-page {
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: rgba(255,255,255,0.95);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #764ba2;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5a3c8c;
+}
+
+/* WELCOME */
+.welcome-page {
+    background: url('https://source.unsplash.com/1600x900/?romantic,travel') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.5);
+    height: 100vh;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.overlay input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* ITINERARY */
+.container {
+    padding: 40px;
+}
+
+.activity {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.logout-btn {
+    background: #d9534f;
+}
