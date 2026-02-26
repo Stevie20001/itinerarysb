@@ -1,80 +1,191 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* LOGIN */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ================= LOGIN PAGE ================= */
+
 .login-page {
     height: 100vh;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #5f2c82, #49a09d);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .login-box {
-    background: rgba(255,255,255,0.95);
-    padding: 40px;
-    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 50px 40px;
+    border-radius: 25px;
     text-align: center;
-    width: 300px;
+    width: 320px;
+    color: white;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+
+.login-box h2 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.login-box p {
+    margin-bottom: 25px;
+    font-size: 14px;
+    opacity: 0.8;
 }
 
 .login-box input {
     width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 8px;
-    border: 1px solid #ddd;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
 }
 
-button {
-    padding: 10px 20px;
+.login-box button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 30px;
     border: none;
-    border-radius: 8px;
-    background: #764ba2;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
     color: white;
+    font-weight: 600;
     cursor: pointer;
     transition: 0.3s;
 }
 
-button:hover {
-    background: #5a3c8c;
+.login-box button:hover {
+    transform: scale(1.05);
 }
 
-/* WELCOME */
+/* ================= WELCOME PAGE ================= */
+
 .welcome-page {
-    background: url('https://source.unsplash.com/1600x900/?romantic,travel') no-repeat center center;
-    background-size: cover;
     height: 100vh;
-    color: white;
+    background: url('https://source.unsplash.com/1600x900/?luxury,romantic,travel') no-repeat center center;
+    background-size: cover;
 }
 
 .overlay {
-    background: rgba(0,0,0,0.5);
     height: 100vh;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
     text-align: center;
-    padding-top: 200px;
+    padding: 20px;
+}
+
+.overlay h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.overlay p {
+    margin-bottom: 20px;
+    opacity: 0.9;
 }
 
 .overlay input {
-    padding: 10px;
-    border-radius: 8px;
+    padding: 14px;
+    border-radius: 30px;
     border: none;
+    margin-bottom: 20px;
+    width: 250px;
+    text-align: center;
 }
 
-/* ITINERARY */
-.container {
-    padding: 40px;
+.overlay button {
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    margin: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.activity {
-    background: #f4f4f4;
-    padding: 15px;
-    border-radius: 10px;
-    margin: 10px 0;
+.overlay button:first-of-type {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+}
+
+.overlay button:hover {
+    transform: scale(1.05);
 }
 
 .logout-btn {
-    background: #d9534f;
+    background: #e74c3c !important;
+    color: white;
 }
+
+/* ================= ITINERARY PAGE ================= */
+
+.container {
+    min-height: 100vh;
+    background: #f8f9fc;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.container h3 {
+    margin-bottom: 40px;
+    color: #777;
+}
+
+.activity {
+    max-width: 500px;
+    margin: 15px auto;
+    padding: 25px;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.activity:hover {
+    transform: translateY(-8px);
+}
+
+.activity h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #5f2c82;
+}
+
+.activity p {
+    color: #555;
+}
+
+/* RESPONSIVE */
+@media(max-width: 600px) {
+    .overlay h1 {
+        font-size: 28px;
+    }
+
+    .login-box {
+        width: 90%;
+    }
+
+    .activity {
+        width: 90%;
+    }
+}
+
