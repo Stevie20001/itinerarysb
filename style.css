@@ -160,6 +160,14 @@ body {
     transition: 0.3s;
 }
 
+.activity-img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    height: 200px;
+    object-fit: cover;
+}
+
 .activity:hover {
     transform: translateY(-8px);
 }
@@ -188,4 +196,5 @@ body {
         width: 90%;
     }
 }
+
 
